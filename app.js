@@ -1,6 +1,10 @@
 // javascript server
-require('dotenv').config({ path: '.env' })
+const version = "2022.11.29-2"
+
 const http = require("http");
+const path = require('path');
+require('dotenv').config({ path: '.env' })
+
 
 const requestListener = function (req, res) {
 
@@ -19,7 +23,7 @@ const requestListener = function (req, res) {
                 const responseData = {
                     code: "200", 
                     message: "Pong",
-                    version: "2022.11.29-1"
+                    version: version
                 }
                 const jsonContent = JSON.stringify(responseData);
         
