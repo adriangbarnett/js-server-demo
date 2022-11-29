@@ -5,3 +5,4 @@ node_modules/
 
 #devNotes/
 .env
+package-lock.json
