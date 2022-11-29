@@ -18,7 +18,8 @@ const requestListener = function (req, res) {
 
                 const responseData = {
                     code: "200", 
-                    message: "Pong"
+                    message: "Pong",
+                    version: "2022.11.29-1"
                 }
                 const jsonContent = JSON.stringify(responseData);
         
